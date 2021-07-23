@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/mhj5wdi.css">
 </head>
 
-<body class="d-flex flex-column h-100">
-
+<body class="d-flex flex-column h-100 contactFormBG">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Bootstrap Grids</a>
@@ -54,47 +53,51 @@
                         <a class="nav-link" href="/Grid8.html">Grid 8</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Grid9.html">Grid 9</a>
+                        <a class="nav-link" href="/Grid9.html">Grid 9</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/ContactForm.html">Contact Form</a>
                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="/AddressBookTemplate.html">Contact Form</a>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/AddressBookTemplate.html">Contact Form</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container-fluid h-100 minHeight">
-            <div class="row h-100 gy-2 row-cols-1 row-cols-md-2">
-                <div class="col col-md-12">
-                    <div class="bg-secondary text-light h-100">
-                        COL ONE
+        <div class="container">
+            <div class="p-3 border border-2 shadow-lg bg-light">
+                <form class="row g-3 p-2">
+                    <div class="col-4">
+                        <img class="img-fluid" src="img/GirlOne_4x.png">
                     </div>
-                </div>
-                <div class="col-6 col-md-3 order-last">
-                    <div class="bg-dark text-light h-100">
-                        COL TWO
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="inputFirstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstName">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputLastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastName">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputPhone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="inputPhone">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-secondary text-light h-100">
-                        COL THREE
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-secondary text-light h-100">
-                        COL THREE
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-secondary text-light h-100">
-                        COL FOUR
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
